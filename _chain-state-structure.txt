@@ -1,0 +1,150 @@
+Bank
+    bankID	integer($int32)
+    bankName	string
+    hqAddress	string
+    bankCategory	string
+    bankAdminUserID	integer($int32)
+    location	string
+    locationLat	string
+    locationLong	string
+
+BankBranch
+    branchID	integer($int32)
+    bankID	integer($int32)
+    branchName	string
+    branchManagerUserID	integer($int32)
+    branchManagerRoleID	integer($int32)
+    location	string
+    locationLat	string
+    locationLong	string
+
+BranchConfig
+    configID	integer($int32)
+    bankID	integer($int32)
+    configName	string
+    configDesc	string
+    item	string
+    value	string
+
+Buyer
+    buyerID	integer($int32)
+    userID	integer($int32)
+    buyerType	string
+    details	string
+    regDate	string($date-time)
+
+Loan
+    loanID	integer($int32)
+    propertyID	integer($int32)
+    userID	integer($int32)
+    buyerID	integer($int32)
+    repayment	number($double)
+    loanStatus	string
+    perfRating	number($double)
+
+LoanBuyer
+    loanBuyerID	integer($int32)
+    loanBuyerName	string
+    buyerCategory	string
+    adminUserID	integer($int32)
+    hqAddress	string
+    location	string
+    locationLat	string
+    locationLong	string
+
+LoanDoc
+    docID	integer($int32)
+    loanID	integer($int32)
+    docName	string
+    docDesc	string
+    docLink	string
+
+
+LoanMarketShare
+    shareID	integer($int32)
+    titleHolder	string
+    amount	number($double)
+    repayments	number($double)
+    statutes	string
+    rating	number($double)
+    status	string
+
+LoanRating
+    ratingID	integer($int32)
+    loanID	integer($int32)
+    rating	number($double)
+    ratingDesc	string
+
+Messages
+    messageID	integer($int32)
+    from	string
+    to	string
+    subject	string
+    message	string
+    messageDate	string($date-time)
+
+Permissions
+    permID	integer($int32)
+    permRoleID	integer($int32)
+    permName	string
+    permModule	string
+
+Property
+    proID	integer($int32)
+    sellerID	integer($int32)
+    proType	string
+    proName	string
+    desc	string
+    address	string
+    location	string
+    locationLat	string
+    locationLong	string
+    views	string
+    viewerStats	string
+    entryDate	string($date-time)
+    expiryDate	string($date-time)
+    status	string
+
+Role
+    roleID	integer($int32)
+    userCategory	string
+    userType	string
+    roleName	string
+    roleDesc	string
+
+Seller
+    sellerID	integer($int32)
+    userID	integer($int32)
+    sellerType	string
+    details	string
+    regDate	string($date-time)
+
+Transaction
+    txnID	integer($int32)
+    txnDate	string($date-time)
+    buyerID	integer($int32)
+    userID	integer($int32)
+    repayment	number($double)
+    amount	number($double)
+    interestRate	number($double)
+    outstanding	number($double)
+    dueDate	string($date-time)
+    bank	string
+    loanStatus	string
+
+User
+    userID	integer($int32)
+    userType	string
+    accountStatus	string
+    userCategory	string
+    firstName	string
+    lastName	string
+    email	string
+    phone	string
+    password	string
+    regDate	string($date-time)
+
+UserCategory
+    catID	integer($int32)
+    catName	string
+    catDescription	string

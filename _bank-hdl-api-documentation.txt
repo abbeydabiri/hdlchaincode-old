@@ -1,0 +1,56 @@
+HDL API Documentation
+- [ ] Total Year Mortgage value per month
+    - [ ] Total: decimal
+- [ ] Total Mortgage value
+    - [ ] Total: decimal
+- [ ] Total Repayments to date
+    - [ ] Total: decimal
+- [ ] Number of pending applications
+    - [ ] Total: number
+- [ ] Transmitted NMRC loans
+    - [ ] Total: number
+- [ ] Recent Loan Repayments (Array of)
+    - [ ] LoanID: number
+    - [ ] TitleHolder: string
+    - [ ] Amount: decimal
+    - [ ] Payments: number
+    - [ ] Repayments: number
+    - [ ] PaymentStatutes: string
+    - [ ] MortgageBank: string
+    - [ ] PerformanceRating: decimal
+- [ ] TrustBondUsers
+    - [ ] UserId: number
+    - [ ] UserType: string
+    - [ ] AccountStatus: boolean
+    - [ ] UserCategory: string
+    - [ ] FirstName: string;
+    - [ ] LastName: string;
+    - [ ] Email: string
+    - [ ] Phone: string;
+    - [ ] RegDate: Date
+- [ ] Messaging (Array of)
+    - [ ] MessageId: number
+    - [ ] Flagged: boolean
+    - [ ] From: string
+    - [ ] To: string
+    - [ ] Subject: string
+    - [ ] Attachment: string
+    - [ ] DateCreated: Date
+    - [ ] Selected: boolean
+- [ ] Submission List (Array of)
+    - [ ] SubmissionsId: number
+    - [ ] TitleHolder: string
+    - [ ] Amount: decimal
+    - [ ] Timeline: number
+    - [ ] Ratings: decimal
+- [ ] Loan Repayments (Array of)
+    - [ ] LoanID: number
+    - [ ] TitleHolder: string
+    - [ ] Amount: decimal
+    - [ ] Statutes: string
+    - [ ] Repayments: number
+    - [ ] Bank: string
+    - [ ] Score: decimal
+    - [ ] Status: string
+- [ ] MMS Transmission List (Needs to be defined)
+- [ ] Manage UUS (Needs to be defined)
