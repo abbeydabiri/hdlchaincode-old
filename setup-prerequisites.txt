@@ -1,0 +1,29 @@
+Minimum Hardware Requirements for BYFN (2GB Ram, 15Gig SSD, 1vCPU)
+
+apt-get install curl
+apt-get install docker
+apt-get install docker-compose
+
+to install golang
+    download from https://golang.org/dl/
+    install https://golang.org/doc/install
+
+to install nodejs & npm - https://websiteforstudents.com/install-the-latest-node-js-and-nmp-packages-on-ubuntu-16-04-18-04-lts/
+    add ppa curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+
+apt-get install python
+
+https://hackernoon.com/hyperledger-fabric-installation-guide-74065855eca9 
+Step 1: Create a new sudo user
+    sudo adduser fabric
+    password = xtradot24
+
+    Add user to sudo group
+        sudo usermod -aG sudo fabric
+
+Step 2: Docker and Docker Compose
+    sudo add-apt-repository "deb  https://download.docker.com/linux/ubuntu bionic stable"
+
+For Customizing a Network :
+
+https://medium.com/cryptokajmak-hyperledger-fabric-web-application/hyperledger-fabric-network-up-and-running-7d7070e62df2
