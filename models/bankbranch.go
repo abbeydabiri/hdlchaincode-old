@@ -3,7 +3,7 @@ package models
 import (
 	"encoding/json"
 	"errors"
-	"hdlchaincode/utils"
+	"github.com/abbeydabiri/hdlchaincode/utils"
 	"time"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"

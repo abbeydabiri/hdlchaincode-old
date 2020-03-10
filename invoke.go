@@ -3,8 +3,8 @@ package main
 import (
 	"errors"
 	"fmt"
-	"hdlchaincode/logic"
-	"hdlchaincode/utils"
+	"github.com/abbeydabiri/hdlchaincode/logic"
+	"github.com/abbeydabiri/hdlchaincode/utils"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	pb "github.com/hyperledger/fabric/protos/peer"

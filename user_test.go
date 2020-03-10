@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"hdlchaincode/models"
-	"hdlchaincode/utils"
+	"github.com/abbeydabiri/hdlchaincode/models"
+	"github.com/abbeydabiri/hdlchaincode/utils"
 
 	"github.com/google/uuid"
 	"github.com/hyperledger/fabric/core/chaincode/shim"
@@ -56,5 +56,5 @@ func TestUserWR(t *testing.T) {
 	}
 
 	assert.Equal(testID, ccResp.Payload.UserID, "Retrieved User ID mismatch")
-	assert.Equal(utils.SELLER, ccResp.Payload.ObjectType, "Retrieved Object Type mismatch")
+	assert.Equal(utils.USEROO, ccResp.Payload.ObjectType, "Retrieved Object Type mismatch")
 }

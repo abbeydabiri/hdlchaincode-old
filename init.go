@@ -1,7 +1,7 @@
 package main
 
 import (
-	"hdlchaincode/utils"
+	"github.com/abbeydabiri/hdlchaincode/utils"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	pb "github.com/hyperledger/fabric/protos/peer"

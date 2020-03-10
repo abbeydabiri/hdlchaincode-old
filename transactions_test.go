@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"hdlchaincode/models"
-	"hdlchaincode/utils"
+	"github.com/abbeydabiri/hdlchaincode/models"
+	"github.com/abbeydabiri/hdlchaincode/utils"
 
 	"github.com/google/uuid"
 	"github.com/hyperledger/fabric/core/chaincode/shim"

@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"hdlchaincode/models"
-	"hdlchaincode/utils"
+	"github.com/abbeydabiri/hdlchaincode/models"
+	"github.com/abbeydabiri/hdlchaincode/utils"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	pb "github.com/hyperledger/fabric/protos/peer"
