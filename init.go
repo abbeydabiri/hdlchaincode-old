@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/abbeydabiri/hdlchaincode/utils"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
@@ -13,6 +15,8 @@ type HDLChaincode struct{}
 
 // Init - Implements shim.Chaincode interface Init() method
 func (t *HDLChaincode) Init(stub shim.ChaincodeStubInterface) pb.Response {
-	r := utils.Response{(utils.CODEALLAOK), "HDL Chaincode started", nil}
-	return shim.Success((r.FormatResponse()))
+	fmt.Println("########### HDLChaincode Init ###########")
+
+	resp := utils.Response{Code: utils.CODEALLAOK, Message: "HDL Chaincode started", Payload: nil}
+	return shim.Success((resp.FormatResponse()))
 }

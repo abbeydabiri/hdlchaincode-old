@@ -10,6 +10,7 @@ import (
 
 // Do setup before tests are run. Each test initialize a new MockStub.
 // This is equivalent to resetting the fabric storage before each run
+// func TestMain(m *testing.M) {
 func TestMain(m *testing.M) {
 	logger.SetLevel(shim.LogError)
 	os.Setenv("MODE", "TEST")
