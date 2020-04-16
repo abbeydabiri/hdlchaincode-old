@@ -9,7 +9,8 @@ import (
 	"github.com/abbeydabiri/hdlchaincode/utils"
 
 	"github.com/google/uuid"
-	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"github.com/hyperledger/fabric-chaincode-go/shim"
+	"github.com/hyperledger/fabric-chaincode-go/shimtest"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -18,7 +19,7 @@ func TestBuyerWR(t *testing.T) {
 
 	assert := assert.New(t)
 	// Instantiate mockStub using HDLChaincode as the target chaincode to unit test
-	stub := shim.NewMockStub("TestStub", new(HDLChaincode))
+	stub := shimtest.NewMockStub("TestStub", new(HDLChaincode))
 	//Verify stub is available
 	assert.NotNil(stub, "Stub is nil, Test stub creation failed")
 

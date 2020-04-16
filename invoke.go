@@ -2,12 +2,12 @@ package main
 
 import (
 	"errors"
-	"fmt"
 	"github.com/abbeydabiri/hdlchaincode/logic"
 	"github.com/abbeydabiri/hdlchaincode/utils"
+	"log"
 
-	"github.com/hyperledger/fabric/core/chaincode/shim"
-	pb "github.com/hyperledger/fabric/protos/peer"
+	"github.com/hyperledger/fabric-chaincode-go/shim"
+	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
 
 // These are function names from Invoke first parameter
@@ -19,7 +19,7 @@ func (hdlc *HDLChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
 	// Retrieve function and in argumentsR. This is not a recommended approach.
 	// Instead, GetArgsW() is a more suitable method and works perfectly with protocol buffers
 	function, args := stub.GetFunctionAndParameters()
-	logger.Info(fmt.Sprintf("Starting Phantom chaincode Invoke for %s and no of argument passed are %d", function, len(args)))
+	log.Printf("\nStarting Phantom chaincode Invoke for %s and no of argument passed are %d\n", function, len(args))
 
 	switch function {
 	case utils.Init:

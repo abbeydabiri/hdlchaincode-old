@@ -6,8 +6,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/hyperledger/fabric/core/chaincode/lib/cid"
-	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"github.com/hyperledger/fabric-chaincode-go/pkg/cid"
+	"github.com/hyperledger/fabric-chaincode-go/shim"
 )
 
 // Response struct to have consistent Response structure for all chaincode invokes
